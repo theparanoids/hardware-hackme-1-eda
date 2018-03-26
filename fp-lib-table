@@ -1,0 +1,6 @@
+(fp_lib_table
+  (lib (name azonenberg_pcb)(type KiCad)(uri /Users/rou/kicad/azonenberg-kicad-libraries/layout/azonenberg_pcb.pretty)(options "")(descr ""))
+  (lib (name rqou)(type KiCad)(uri /Users/rou/kicad/rqou-kicad-libs/rqou.pretty)(options "")(descr ""))
+  (lib (name paranoids-hackme-1)(type KiCad)(uri "$(KIPRJMOD)/paranoids-hackme-1.pretty")(options "")(descr ""))
+  (lib (name paranoids_logo)(type KiCad)(uri /Users/rou/kicad/paranoids_logo)(options "")(descr ""))
+)

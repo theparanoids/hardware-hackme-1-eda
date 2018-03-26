@@ -1,0 +1,1714 @@
+EESchema Schematic File Version 4
+LIBS:paranoids-hackme-1
+LIBS:analog-azonenberg
+LIBS:cmos
+LIBS:cypress-azonenberg
+LIBS:hirose-azonenberg
+LIBS:memory-azonenberg
+LIBS:microchip-azonenberg
+LIBS:osc-azonenberg
+LIBS:passive-azonenberg
+LIBS:power-azonenberg
+LIBS:silego-azonenberg
+LIBS:special-azonenberg
+LIBS:xilinx-azonenberg
+LIBS:power
+LIBS:device
+LIBS:linear
+LIBS:regul
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:paranoids-hackme-1-cache
+EELAYER 26 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 4 4
+Title "Paranoids Hackme 1"
+Date "2018-06-21"
+Rev "B"
+Comp "Oath Inc"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L paranoids-hackme-1:STM32F103Cx U7
+U 1 1 5ABABD06
+P 5900 3750
+F 0 "U7" H 5900 4637 60  0000 C CNN
+F 1 "STM32F103Cx" H 5900 4531 60  0000 C CNN
+F 2 "Housings_QFP:LQFP-48_7x7mm_Pitch0.5mm" H 5900 4000 60  0001 C CNN
+F 3 "" H 5900 4000 60  0001 C CNN
+	1    5900 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L rqou:USB-OTG USB2
+U 1 1 5ABABD0D
+P 1400 3700
+F 0 "USB2" H 1506 4237 60  0000 C CNN
+F 1 "USB-OTG" H 1506 4131 60  0000 C CNN
+F 2 "rqou:USB-MICRO-AB" H 1300 3700 60  0001 C CNN
+F 3 "" H 1300 3700 60  0000 C CNN
+	1    1400 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-azonenberg:LDO1117-XX U5
+U 1 1 5ABABD14
+P 1550 850
+F 0 "U5" H 1625 1087 60  0000 C CNN
+F 1 "LDO1117-3.3V" H 1625 981 60  0000 C CNN
+F 2 "azonenberg_pcb:SOT223-4" H 1550 850 60  0001 C CNN
+F 3 "" H 1550 850 60  0000 C CNN
+	1    1550 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:Crystal_Small Y2
+U 1 1 5ABABD1B
+P 8300 4150
+F 0 "Y2" V 8254 4238 50  0000 L CNN
+F 1 "8 MHz" V 8345 4238 50  0000 L CNN
+F 2 "rqou:HC49UP" H 8300 4150 50  0001 C CNN
+F 3 "" H 8300 4150 50  0001 C CNN
+	1    8300 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push_Dual SW1
+U 1 1 5ABABD22
+P 9250 3400
+F 0 "SW1" H 9250 3685 50  0000 C CNN
+F 1 "SW_Push_Dual" H 9250 3594 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_PUSH_6mm" H 9250 3600 50  0001 C CNN
+F 3 "" H 9250 3600 50  0001 C CNN
+	1    9250 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:LED D5
+U 1 1 5ABABD29
+P 1550 6400
+F 0 "D5" H 1542 6145 50  0000 C CNN
+F 1 "GREEN" H 1542 6236 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_LED" H 1550 6400 50  0001 C CNN
+F 3 "~" H 1550 6400 50  0001 C CNN
+	1    1550 6400
+	-1   0    0    1   
+$EndComp
+$Comp
+L device:LED D6
+U 1 1 5ABABD30
+P 1550 6800
+F 0 "D6" H 1542 6545 50  0000 C CNN
+F 1 "YELLOW" H 1542 6636 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_LED" H 1550 6800 50  0001 C CNN
+F 3 "~" H 1550 6800 50  0001 C CNN
+	1    1550 6800
+	-1   0    0    1   
+$EndComp
+$Comp
+L device:LED D7
+U 1 1 5ABABD37
+P 1550 7200
+F 0 "D7" H 1542 6945 50  0000 C CNN
+F 1 "ORANGE" H 1542 7036 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_LED" H 1550 7200 50  0001 C CNN
+F 3 "~" H 1550 7200 50  0001 C CNN
+	1    1550 7200
+	-1   0    0    1   
+$EndComp
+$Comp
+L device:LED D8
+U 1 1 5ABABD3E
+P 1550 7600
+F 0 "D8" H 1542 7345 50  0000 C CNN
+F 1 "RED" H 1542 7436 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_LED" H 1550 7600 50  0001 C CNN
+F 3 "~" H 1550 7600 50  0001 C CNN
+	1    1550 7600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR036
+U 1 1 5ABACC52
+P 2050 3350
+F 0 "#PWR036" H 2050 3200 50  0001 C CNN
+F 1 "+5V" H 2065 3523 50  0000 C CNN
+F 2 "" H 2050 3350 50  0001 C CNN
+F 3 "" H 2050 3350 50  0001 C CNN
+	1    2050 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 3450 2050 3450
+Wire Wire Line
+	2050 3450 2050 3350
+$Comp
+L power:GND #PWR037
+U 1 1 5ABACCE4
+P 2050 4050
+F 0 "#PWR037" H 2050 3800 50  0001 C CNN
+F 1 "GND" H 2055 3877 50  0000 C CNN
+F 2 "" H 2050 4050 50  0001 C CNN
+F 3 "" H 2050 4050 50  0001 C CNN
+	1    2050 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 3950 2050 3950
+Wire Wire Line
+	2050 3950 2050 4050
+Wire Wire Line
+	1950 3850 2050 3850
+Wire Wire Line
+	2050 3850 2050 3950
+Connection ~ 2050 3950
+$Comp
+L power:GND #PWR034
+U 1 1 5ABACF6B
+P 1600 1600
+F 0 "#PWR034" H 1600 1350 50  0001 C CNN
+F 1 "GND" H 1605 1427 50  0000 C CNN
+F 2 "" H 1600 1600 50  0001 C CNN
+F 3 "" H 1600 1600 50  0001 C CNN
+	1    1600 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR032
+U 1 1 5ABACFF2
+P 700 850
+F 0 "#PWR032" H 700 700 50  0001 C CNN
+F 1 "+5V" H 715 1023 50  0000 C CNN
+F 2 "" H 700 850 50  0001 C CNN
+F 3 "" H 700 850 50  0001 C CNN
+	1    700  850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR038
+U 1 1 5ABAD04B
+P 2550 850
+F 0 "#PWR038" H 2550 700 50  0001 C CNN
+F 1 "+3.3V" H 2565 1023 50  0000 C CNN
+F 2 "" H 2550 850 50  0001 C CNN
+F 3 "" H 2550 850 50  0001 C CNN
+	1    2550 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  950  700  950 
+Wire Wire Line
+	700  950  700  850 
+Wire Wire Line
+	2450 950  2550 950 
+Wire Wire Line
+	2550 950  2550 850 
+Wire Wire Line
+	1600 1600 1600 1550
+$Comp
+L power:GND #PWR035
+U 1 1 5ABAD7C4
+P 1800 7700
+F 0 "#PWR035" H 1800 7450 50  0001 C CNN
+F 1 "GND" H 1805 7527 50  0000 C CNN
+F 2 "" H 1800 7700 50  0001 C CNN
+F 3 "" H 1800 7700 50  0001 C CNN
+	1    1800 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R27
+U 1 1 5ABAD9B2
+P 1150 6400
+F 0 "R27" V 943 6400 50  0000 C CNN
+F 1 "330" V 1034 6400 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 1080 6400 50  0001 C CNN
+F 3 "" H 1150 6400 50  0001 C CNN
+	1    1150 6400
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R28
+U 1 1 5ABADA39
+P 1150 6800
+F 0 "R28" V 943 6800 50  0000 C CNN
+F 1 "330" V 1034 6800 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 1080 6800 50  0001 C CNN
+F 3 "" H 1150 6800 50  0001 C CNN
+	1    1150 6800
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R29
+U 1 1 5ABADAA1
+P 1150 7200
+F 0 "R29" V 943 7200 50  0000 C CNN
+F 1 "330" V 1034 7200 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 1080 7200 50  0001 C CNN
+F 3 "" H 1150 7200 50  0001 C CNN
+	1    1150 7200
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R30
+U 1 1 5ABADB21
+P 1150 7600
+F 0 "R30" V 943 7600 50  0000 C CNN
+F 1 "330" V 1034 7600 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 1080 7600 50  0001 C CNN
+F 3 "" H 1150 7600 50  0001 C CNN
+	1    1150 7600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1700 6400 1800 6400
+Wire Wire Line
+	1800 6400 1800 6800
+Wire Wire Line
+	1700 7600 1800 7600
+Connection ~ 1800 7600
+Wire Wire Line
+	1800 7600 1800 7700
+Wire Wire Line
+	1700 7200 1800 7200
+Connection ~ 1800 7200
+Wire Wire Line
+	1800 7200 1800 7600
+Wire Wire Line
+	1700 6800 1800 6800
+Connection ~ 1800 6800
+Wire Wire Line
+	1800 6800 1800 7200
+Wire Wire Line
+	1300 6400 1400 6400
+Wire Wire Line
+	1300 6800 1400 6800
+Wire Wire Line
+	1300 7200 1400 7200
+Wire Wire Line
+	1300 7600 1400 7600
+Wire Wire Line
+	900  6300 900  6400
+Wire Wire Line
+	900  6400 1000 6400
+Wire Wire Line
+	700  6800 1000 6800
+Wire Wire Line
+	700  7200 1000 7200
+Wire Wire Line
+	700  7600 1000 7600
+Text Label 750  6800 0    50   ~ 0
+LED0
+Text Label 750  7200 0    50   ~ 0
+LED1
+Text Label 750  7600 0    50   ~ 0
+LED2
+Wire Wire Line
+	7750 3600 8100 3600
+Wire Wire Line
+	8100 3650 7750 3650
+Text Label 8000 3200 0    25   ~ 0
+LED0
+Text Label 7950 3650 0    25   ~ 0
+LED2
+Text Label 7950 3600 0    25   ~ 0
+LED1
+$Comp
+L device:C_Small C26
+U 1 1 5ABB0AB3
+P 8650 4000
+F 0 "C26" V 8421 4000 50  0000 C CNN
+F 1 "20pF" V 8512 4000 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 8650 4000 50  0001 C CNN
+F 3 "" H 8650 4000 50  0001 C CNN
+	1    8650 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L device:C_Small C27
+U 1 1 5ABB0BFF
+P 8650 4300
+F 0 "C27" V 8400 4300 50  0000 C CNN
+F 1 "20pF" V 8500 4300 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 8650 4300 50  0001 C CNN
+F 3 "" H 8650 4300 50  0001 C CNN
+	1    8650 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR061
+U 1 1 5ABB1F23
+P 9000 4150
+F 0 "#PWR061" H 9000 3900 50  0001 C CNN
+F 1 "GND" H 9005 3977 50  0000 C CNN
+F 2 "" H 9000 4150 50  0001 C CNN
+F 3 "" H 9000 4150 50  0001 C CNN
+	1    9000 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 4000 8750 4150
+Wire Wire Line
+	9000 4150 8750 4150
+Connection ~ 8750 4150
+Wire Wire Line
+	8750 4150 8750 4300
+Wire Wire Line
+	8550 4000 8300 4000
+Wire Wire Line
+	8300 4000 8300 4050
+Wire Wire Line
+	8550 4300 8300 4300
+Wire Wire Line
+	8300 4300 8300 4250
+Wire Wire Line
+	7750 4200 8150 4200
+Wire Wire Line
+	8150 4200 8150 4300
+Wire Wire Line
+	8150 4300 8300 4300
+Connection ~ 8300 4300
+Wire Wire Line
+	7750 4150 8150 4150
+Wire Wire Line
+	8150 4150 8150 4000
+Wire Wire Line
+	8150 4000 8300 4000
+Connection ~ 8300 4000
+$Comp
+L device:R R31
+U 1 1 5ABB5241
+P 2450 3550
+F 0 "R31" V 2400 3350 50  0000 C CNN
+F 1 "22" V 2450 3550 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 2380 3550 50  0001 C CNN
+F 3 "" H 2450 3550 50  0001 C CNN
+	1    2450 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R32
+U 1 1 5ABB52BB
+P 2450 3650
+F 0 "R32" V 2400 3450 50  0000 C CNN
+F 1 "22" V 2450 3650 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 2380 3650 50  0001 C CNN
+F 3 "" H 2450 3650 50  0001 C CNN
+	1    2450 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1950 3550 2300 3550
+Wire Wire Line
+	1950 3650 2300 3650
+$Comp
+L device:R R33
+U 1 1 5ABB63BE
+P 2750 3250
+F 0 "R33" H 2820 3296 50  0000 L CNN
+F 1 "1.5k" H 2820 3205 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 2680 3250 50  0001 C CNN
+F 3 "" H 2750 3250 50  0001 C CNN
+	1    2750 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 3650 2750 3650
+Wire Wire Line
+	2750 3650 2750 3400
+Wire Wire Line
+	4050 3650 3150 3650
+Wire Wire Line
+	3150 3650 3150 3550
+Wire Wire Line
+	3150 3550 2600 3550
+Wire Wire Line
+	4050 3700 3100 3700
+Wire Wire Line
+	3100 3700 3100 3650
+Wire Wire Line
+	3100 3650 2750 3650
+Connection ~ 2750 3650
+Wire Wire Line
+	4050 3500 3100 3500
+Wire Wire Line
+	3100 3500 3100 3000
+Wire Wire Line
+	3100 3000 2750 3000
+Wire Wire Line
+	2750 3000 2750 3100
+$Comp
+L power:GND #PWR062
+U 1 1 5ABB9895
+P 9550 3700
+F 0 "#PWR062" H 9550 3450 50  0001 C CNN
+F 1 "GND" H 9555 3527 50  0000 C CNN
+F 2 "" H 9550 3700 50  0001 C CNN
+F 3 "" H 9550 3700 50  0001 C CNN
+	1    9550 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R55
+U 1 1 5ABB9953
+P 8700 3250
+F 0 "R55" H 8770 3296 50  0000 L CNN
+F 1 "10k" H 8770 3205 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 8630 3250 50  0001 C CNN
+F 3 "" H 8700 3250 50  0001 C CNN
+	1    8700 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 3400 9550 3400
+Wire Wire Line
+	9550 3400 9550 3600
+Wire Wire Line
+	9450 3600 9550 3600
+Connection ~ 9550 3600
+Wire Wire Line
+	9550 3600 9550 3700
+Wire Wire Line
+	9050 3400 8950 3400
+$Comp
+L power:+3.3V #PWR060
+U 1 1 5ABBC919
+P 8700 3100
+F 0 "#PWR060" H 8700 2950 50  0001 C CNN
+F 1 "+3.3V" H 8715 3273 50  0000 C CNN
+F 2 "" H 8700 3100 50  0001 C CNN
+F 3 "" H 8700 3100 50  0001 C CNN
+	1    8700 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 3600 8950 3600
+Wire Wire Line
+	8950 3600 8950 3400
+Connection ~ 8950 3400
+Wire Wire Line
+	8950 3400 8700 3400
+Wire Wire Line
+	7750 3700 8600 3700
+Wire Wire Line
+	8600 3700 8600 3400
+Wire Wire Line
+	8600 3400 8700 3400
+Connection ~ 8700 3400
+$Comp
+L device:R R39
+U 1 1 5ABBF151
+P 4800 2000
+F 0 "R39" V 4750 2200 50  0000 C CNN
+F 1 "0" V 4800 2000 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 4730 2000 50  0001 C CNN
+F 3 "" H 4800 2000 50  0001 C CNN
+	1    4800 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R40
+U 1 1 5ABBF1E5
+P 4800 2150
+F 0 "R40" V 4750 2350 50  0000 C CNN
+F 1 "0" V 4800 2150 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 4730 2150 50  0001 C CNN
+F 3 "" H 4800 2150 50  0001 C CNN
+	1    4800 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R41
+U 1 1 5ABBF2D6
+P 4800 2300
+F 0 "R41" V 4750 2500 50  0000 C CNN
+F 1 "0" V 4800 2300 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 4730 2300 50  0001 C CNN
+F 3 "" H 4800 2300 50  0001 C CNN
+	1    4800 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R42
+U 1 1 5ABBF367
+P 4800 2450
+F 0 "R42" V 4750 2650 50  0000 C CNN
+F 1 "0" V 4800 2450 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 4730 2450 50  0001 C CNN
+F 3 "" H 4800 2450 50  0001 C CNN
+	1    4800 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R43
+U 1 1 5ABBF405
+P 4800 2600
+F 0 "R43" V 4750 2800 50  0000 C CNN
+F 1 "0" V 4800 2600 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 4730 2600 50  0001 C CNN
+F 3 "" H 4800 2600 50  0001 C CNN
+	1    4800 2600
+	0    1    1    0   
+$EndComp
+Text HLabel 5200 2000 2    25   Input ~ 0
+TGT_TMS_SWDIO
+Text HLabel 5200 2150 2    25   Input ~ 0
+TGT_TCK_SWCLK
+Text HLabel 5200 2300 2    25   Input ~ 0
+TGT_TDO_TRACESWO
+Text HLabel 5200 2450 2    25   Input ~ 0
+TGT_TDI
+Text HLabel 5200 2600 2    25   Input ~ 0
+TGT_RST
+Wire Wire Line
+	5200 2600 4950 2600
+Wire Wire Line
+	5200 2450 4950 2450
+Wire Wire Line
+	4950 2300 5200 2300
+Wire Wire Line
+	5200 2150 4950 2150
+Wire Wire Line
+	5200 2000 4950 2000
+Wire Wire Line
+	4050 3300 3900 3300
+Wire Wire Line
+	3900 3300 3900 2000
+Wire Wire Line
+	4050 3350 3850 3350
+Wire Wire Line
+	3850 3350 3850 2150
+Wire Wire Line
+	4050 3400 3800 3400
+Wire Wire Line
+	3800 3400 3800 2300
+Wire Wire Line
+	4050 3250 3750 3250
+Wire Wire Line
+	3750 3250 3750 2450
+Wire Wire Line
+	3700 3200 4050 3200
+$Comp
+L device:R R34
+U 1 1 5ABE9C01
+P 3200 4350
+F 0 "R34" V 3150 4150 50  0000 C CNN
+F 1 "0" V 3200 4350 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 3130 4350 50  0001 C CNN
+F 3 "" H 3200 4350 50  0001 C CNN
+	1    3200 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R35
+U 1 1 5ABE9CAE
+P 3200 4500
+F 0 "R35" V 3150 4300 50  0000 C CNN
+F 1 "0" V 3200 4500 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 3130 4500 50  0001 C CNN
+F 3 "" H 3200 4500 50  0001 C CNN
+	1    3200 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4050 3600 3500 3600
+Wire Wire Line
+	4050 3550 3450 3550
+Wire Wire Line
+	3050 4350 2900 4350
+Wire Wire Line
+	2900 4500 3050 4500
+Text HLabel 2900 4500 0    25   Input ~ 0
+TGT_TX_TO_DBG
+Text HLabel 2900 4350 0    25   Input ~ 0
+TGT_RX_FROM_DBG
+Text HLabel 5550 6100 2    25   Input ~ 0
+MITM_UART_IN
+Text HLabel 5550 7050 2    25   Input ~ 0
+MITM_UART_OUT
+$Comp
+L device:R R37
+U 1 1 5AC9C5A4
+P 3750 6500
+F 0 "R37" H 3820 6546 50  0000 L CNN
+F 1 "DNP" H 3820 6455 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 3680 6500 50  0001 C CNN
+F 3 "" H 3750 6500 50  0001 C CNN
+	1    3750 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R38
+U 1 1 5AC9C648
+P 4050 6500
+F 0 "R38" H 4120 6546 50  0000 L CNN
+F 1 "10k" H 4120 6455 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 3980 6500 50  0001 C CNN
+F 3 "" H 4050 6500 50  0001 C CNN
+	1    4050 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 6100 5450 6100
+Wire Wire Line
+	4400 6100 4700 6100
+Text Label 4450 6100 0    25   ~ 0
+LED2
+$Comp
+L power:+3.3V #PWR042
+U 1 1 5ACB3C7F
+P 3750 6250
+F 0 "#PWR042" H 3750 6100 50  0001 C CNN
+F 1 "+3.3V" H 3765 6423 50  0000 C CNN
+F 2 "" H 3750 6250 50  0001 C CNN
+F 3 "" H 3750 6250 50  0001 C CNN
+	1    3750 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR043
+U 1 1 5ACB3D28
+P 4050 6250
+F 0 "#PWR043" H 4050 6100 50  0001 C CNN
+F 1 "+3.3V" H 4065 6423 50  0000 C CNN
+F 2 "" H 4050 6250 50  0001 C CNN
+F 3 "" H 4050 6250 50  0001 C CNN
+	1    4050 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 7050 5450 7050
+Wire Wire Line
+	5450 7550 5450 7050
+Connection ~ 5450 7050
+Wire Wire Line
+	5450 6100 5450 6450
+Wire Wire Line
+	5450 6450 4400 6450
+Wire Wire Line
+	4400 6450 4400 7050
+Connection ~ 5450 6100
+Wire Wire Line
+	5450 6100 5300 6100
+Text Label 4450 7550 0    25   ~ 0
+LED1
+Wire Wire Line
+	3750 6250 3750 6350
+Wire Wire Line
+	4050 6250 4050 6350
+Text Label 7900 3800 0    25   ~ 0
+MITM_DBG_EN
+Text Label 7900 3850 0    25   ~ 0
+MITM_TGT_EN
+Text Label 3650 6800 0    25   ~ 0
+MITM_TGT_EN
+Text Label 3650 7300 0    25   ~ 0
+MITM_DBG_EN
+Wire Wire Line
+	3600 6800 3750 6800
+Wire Wire Line
+	3600 7300 4050 7300
+Wire Wire Line
+	4050 6650 4050 7300
+Connection ~ 4050 7300
+Wire Wire Line
+	3750 6650 3750 6800
+Connection ~ 3750 6800
+$Comp
+L Connector:Conn_01x07 J5
+U 1 1 5ACF8335
+P 6150 1350
+F 0 "J5" H 6230 1392 50  0000 L CNN
+F 1 "Conn_01x07" H 6230 1301 50  0000 L CNN
+F 2 "paranoids-hackme-1:CONN_HEADER_2.54MM_1x7" H 6150 1350 50  0001 C CNN
+F 3 "~" H 6150 1350 50  0001 C CNN
+	1    6150 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR048
+U 1 1 5ACF83E5
+P 5850 950
+F 0 "#PWR048" H 5850 800 50  0001 C CNN
+F 1 "+3.3V" H 5865 1123 50  0000 C CNN
+F 2 "" H 5850 950 50  0001 C CNN
+F 3 "" H 5850 950 50  0001 C CNN
+	1    5850 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR049
+U 1 1 5ACF8486
+P 5850 1750
+F 0 "#PWR049" H 5850 1500 50  0001 C CNN
+F 1 "GND" H 5855 1577 50  0000 C CNN
+F 2 "" H 5850 1750 50  0001 C CNN
+F 3 "" H 5850 1750 50  0001 C CNN
+	1    5850 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 1650 5850 1650
+Wire Wire Line
+	5850 1650 5850 1750
+Wire Wire Line
+	5950 1050 5850 1050
+Wire Wire Line
+	5850 1050 5850 950 
+Wire Wire Line
+	5950 1150 4350 1150
+Wire Wire Line
+	4350 1150 4350 2000
+Connection ~ 4350 2000
+Wire Wire Line
+	4350 2000 4650 2000
+Wire Wire Line
+	5950 1250 4400 1250
+Wire Wire Line
+	4400 1250 4400 2150
+Connection ~ 4400 2150
+Wire Wire Line
+	4400 2150 4650 2150
+Wire Wire Line
+	5950 1350 4450 1350
+Wire Wire Line
+	4450 1350 4450 2300
+Connection ~ 4450 2300
+Wire Wire Line
+	4450 2300 4650 2300
+Wire Wire Line
+	5950 1450 4500 1450
+Wire Wire Line
+	4500 1450 4500 2450
+Connection ~ 4500 2450
+Wire Wire Line
+	4500 2450 4650 2450
+Wire Wire Line
+	5950 1550 4550 1550
+Wire Wire Line
+	4550 1550 4550 2600
+Connection ~ 4550 2600
+Wire Wire Line
+	4550 2600 4650 2600
+$Comp
+L Connector:Conn_01x04 J4
+U 1 1 5AD1AEDB
+P 2650 5000
+F 0 "J4" H 2570 5317 50  0000 C CNN
+F 1 "Conn_01x04" H 2570 5226 50  0000 C CNN
+F 2 "azonenberg_pcb:CONN_HEADER_2.54MM_1x4" H 2650 5000 50  0001 C CNN
+F 3 "~" H 2650 5000 50  0001 C CNN
+	1    2650 5000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR040
+U 1 1 5AD1B09E
+P 2950 4800
+F 0 "#PWR040" H 2950 4650 50  0001 C CNN
+F 1 "+3.3V" H 2965 4973 50  0000 C CNN
+F 2 "" H 2950 4800 50  0001 C CNN
+F 3 "" H 2950 4800 50  0001 C CNN
+	1    2950 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR041
+U 1 1 5AD1B19A
+P 2950 5300
+F 0 "#PWR041" H 2950 5050 50  0001 C CNN
+F 1 "GND" H 2955 5127 50  0000 C CNN
+F 2 "" H 2950 5300 50  0001 C CNN
+F 3 "" H 2950 5300 50  0001 C CNN
+	1    2950 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 4900 2950 4900
+Wire Wire Line
+	2950 4900 2950 4800
+Wire Wire Line
+	2850 5200 2950 5200
+Wire Wire Line
+	2950 5200 2950 5300
+Wire Wire Line
+	2850 5000 3450 5000
+Wire Wire Line
+	3450 5000 3450 4350
+Connection ~ 3450 4350
+Wire Wire Line
+	3450 4350 3350 4350
+Wire Wire Line
+	2850 5100 3500 5100
+Wire Wire Line
+	3500 5100 3500 4500
+Connection ~ 3500 4500
+Wire Wire Line
+	3500 4500 3350 4500
+$Comp
+L device:C C18
+U 1 1 5AD3430C
+P 700 1300
+F 0 "C18" H 815 1346 50  0000 L CNN
+F 1 "4.7uF" H 815 1255 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_0603_CAP_NOSILK" H 738 1150 50  0001 C CNN
+F 3 "" H 700 1300 50  0001 C CNN
+	1    700  1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C19
+U 1 1 5AD343F6
+P 2550 1300
+F 0 "C19" H 2665 1346 50  0000 L CNN
+F 1 "4.7uF" H 2665 1255 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_0603_CAP_NOSILK" H 2588 1150 50  0001 C CNN
+F 3 "" H 2550 1300 50  0001 C CNN
+	1    2550 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 1550 700  1550
+Wire Wire Line
+	700  1550 700  1450
+Connection ~ 1600 1550
+Wire Wire Line
+	1600 1550 1600 1500
+Wire Wire Line
+	1600 1550 2550 1550
+Wire Wire Line
+	2550 1550 2550 1450
+Wire Wire Line
+	2550 1150 2550 950 
+Connection ~ 2550 950 
+Wire Wire Line
+	700  1150 700  950 
+Connection ~ 700  950 
+$Comp
+L power:+3.3V #PWR033
+U 1 1 5AD58BB9
+P 900 6300
+F 0 "#PWR033" H 900 6150 50  0001 C CNN
+F 1 "+3.3V" H 915 6473 50  0000 C CNN
+F 2 "" H 900 6300 50  0001 C CNN
+F 3 "" H 900 6300 50  0001 C CNN
+	1    900  6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R51
+U 1 1 5AD61C8F
+P 8150 4750
+F 0 "R51" H 8220 4796 50  0000 L CNN
+F 1 "4.7k" H 8220 4705 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 8080 4750 50  0001 C CNN
+F 3 "" H 8150 4750 50  0001 C CNN
+	1    8150 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R52
+U 1 1 5AD61D31
+P 8150 5150
+F 0 "R52" H 8220 5196 50  0000 L CNN
+F 1 "10k" H 8220 5105 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 8080 5150 50  0001 C CNN
+F 3 "" H 8150 5150 50  0001 C CNN
+	1    8150 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R53
+U 1 1 5AD61DD2
+P 8350 2200
+F 0 "R53" H 8420 2246 50  0000 L CNN
+F 1 "4.7k" H 8420 2155 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 8280 2200 50  0001 C CNN
+F 3 "" H 8350 2200 50  0001 C CNN
+	1    8350 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R54
+U 1 1 5AD61E76
+P 8350 2600
+F 0 "R54" H 8420 2646 50  0000 L CNN
+F 1 "10k" H 8420 2555 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 8280 2600 50  0001 C CNN
+F 3 "" H 8350 2600 50  0001 C CNN
+	1    8350 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR057
+U 1 1 5AD69AE4
+P 8150 5300
+F 0 "#PWR057" H 8150 5050 50  0001 C CNN
+F 1 "GND" H 8155 5127 50  0000 C CNN
+F 2 "" H 8150 5300 50  0001 C CNN
+F 3 "" H 8150 5300 50  0001 C CNN
+	1    8150 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR059
+U 1 1 5AD69B85
+P 8350 2750
+F 0 "#PWR059" H 8350 2500 50  0001 C CNN
+F 1 "GND" H 8355 2577 50  0000 C CNN
+F 2 "" H 8350 2750 50  0001 C CNN
+F 3 "" H 8350 2750 50  0001 C CNN
+	1    8350 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 4900 8150 4950
+$Comp
+L power:+5V #PWR056
+U 1 1 5AD71279
+P 8150 4600
+F 0 "#PWR056" H 8150 4450 50  0001 C CNN
+F 1 "+5V" H 8165 4773 50  0000 C CNN
+F 2 "" H 8150 4600 50  0001 C CNN
+F 3 "" H 8150 4600 50  0001 C CNN
+	1    8150 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 3750 7850 3750
+Wire Wire Line
+	7850 3750 7850 4950
+Wire Wire Line
+	7850 4950 8150 4950
+Connection ~ 8150 4950
+Wire Wire Line
+	8150 4950 8150 5000
+Wire Wire Line
+	7750 3800 8200 3800
+Wire Wire Line
+	7750 3850 8200 3850
+$Comp
+L power:+3.3V #PWR058
+U 1 1 5AD904B6
+P 8350 2050
+F 0 "#PWR058" H 8350 1900 50  0001 C CNN
+F 1 "+3.3V" H 8365 2223 50  0000 C CNN
+F 2 "" H 8350 2050 50  0001 C CNN
+F 3 "" H 8350 2050 50  0001 C CNN
+	1    8350 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 2350 8350 2400
+Wire Wire Line
+	8250 2400 8250 3100
+Wire Wire Line
+	8250 3100 7750 3100
+Connection ~ 8350 2400
+Wire Wire Line
+	8350 2400 8350 2450
+$Comp
+L device:R R45
+U 1 1 5ADA060E
+P 7050 2650
+F 0 "R45" H 7120 2696 50  0000 L CNN
+F 1 "0" H 7120 2605 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 6980 2650 50  0001 C CNN
+F 3 "" H 7050 2650 50  0001 C CNN
+	1    7050 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R49
+U 1 1 5ADA06C5
+P 7650 2650
+F 0 "R49" H 7720 2696 50  0000 L CNN
+F 1 "0" H 7720 2605 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 7580 2650 50  0001 C CNN
+F 3 "" H 7650 2650 50  0001 C CNN
+	1    7650 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR052
+U 1 1 5ADA0784
+P 7050 2500
+F 0 "#PWR052" H 7050 2350 50  0001 C CNN
+F 1 "+3.3V" H 7065 2673 50  0000 C CNN
+F 2 "" H 7050 2500 50  0001 C CNN
+F 3 "" H 7050 2500 50  0001 C CNN
+	1    7050 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR055
+U 1 1 5ADA082B
+P 7650 2400
+F 0 "#PWR055" H 7650 2250 50  0001 C CNN
+F 1 "+3.3V" H 7665 2573 50  0000 C CNN
+F 2 "" H 7650 2400 50  0001 C CNN
+F 3 "" H 7650 2400 50  0001 C CNN
+	1    7650 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 2800 7050 3000
+Wire Wire Line
+	7050 3000 7800 3000
+Wire Wire Line
+	7800 3000 7800 3300
+Wire Wire Line
+	7800 3300 7750 3300
+Wire Wire Line
+	7750 3400 7900 3400
+Wire Wire Line
+	7900 3400 7900 2900
+Wire Wire Line
+	7900 2900 7650 2900
+Wire Wire Line
+	7650 2900 7650 2800
+$Comp
+L device:C_Small C20
+U 1 1 5ADBA96C
+P 4200 4850
+F 0 "C20" H 4292 4896 50  0000 L CNN
+F 1 "4.7uF" H 4292 4805 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_0603_CAP_NOSILK" H 4200 4850 50  0001 C CNN
+F 3 "" H 4200 4850 50  0001 C CNN
+	1    4200 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C_Small C22
+U 1 1 5ADBAA2A
+P 4650 4850
+F 0 "C22" H 4742 4896 50  0000 L CNN
+F 1 "0.1uF" H 4742 4805 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 4650 4850 50  0001 C CNN
+F 3 "" H 4650 4850 50  0001 C CNN
+	1    4650 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C_Small C24
+U 1 1 5ADBAAE7
+P 5050 4850
+F 0 "C24" H 5142 4896 50  0000 L CNN
+F 1 "0.1uF" H 5142 4805 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 5050 4850 50  0001 C CNN
+F 3 "" H 5050 4850 50  0001 C CNN
+	1    5050 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C_Small C25
+U 1 1 5ADBABA7
+P 5450 4850
+F 0 "C25" H 5542 4896 50  0000 L CNN
+F 1 "0.1uF" H 5542 4805 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 5450 4850 50  0001 C CNN
+F 3 "" H 5450 4850 50  0001 C CNN
+	1    5450 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 4750 5050 4750
+Wire Wire Line
+	5050 4750 4650 4750
+Connection ~ 5050 4750
+Wire Wire Line
+	4650 4750 4200 4750
+Connection ~ 4650 4750
+Wire Wire Line
+	4200 4750 3900 4750
+Wire Wire Line
+	3900 4300 4050 4300
+Connection ~ 4200 4750
+Wire Wire Line
+	5450 4750 5500 4750
+Wire Wire Line
+	5500 4750 5500 4700
+Connection ~ 5450 4750
+$Comp
+L power:+3.3V #PWR046
+U 1 1 5ADE82EF
+P 5500 4700
+F 0 "#PWR046" H 5500 4550 50  0001 C CNN
+F 1 "+3.3V" H 5515 4873 50  0000 C CNN
+F 2 "" H 5500 4700 50  0001 C CNN
+F 3 "" H 5500 4700 50  0001 C CNN
+	1    5500 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 4300 3900 4750
+Wire Wire Line
+	4050 4350 3950 4350
+Wire Wire Line
+	3950 4350 3950 4950
+Wire Wire Line
+	3950 4950 4200 4950
+Wire Wire Line
+	4200 4950 4650 4950
+Connection ~ 4200 4950
+Wire Wire Line
+	4650 4950 5050 4950
+Connection ~ 4650 4950
+Wire Wire Line
+	5050 4950 5450 4950
+Connection ~ 5050 4950
+Wire Wire Line
+	5450 4950 5500 4950
+Wire Wire Line
+	5500 4950 5500 5000
+Connection ~ 5450 4950
+$Comp
+L power:GND #PWR047
+U 1 1 5AE2D418
+P 5500 5000
+F 0 "#PWR047" H 5500 4750 50  0001 C CNN
+F 1 "GND" H 5505 4827 50  0000 C CNN
+F 2 "" H 5500 5000 50  0001 C CNN
+F 3 "" H 5500 5000 50  0001 C CNN
+	1    5500 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 4200 3900 4200
+Wire Wire Line
+	3900 4200 3900 4300
+Connection ~ 3900 4300
+Wire Wire Line
+	4050 4100 3950 4100
+Wire Wire Line
+	3950 4100 3950 4350
+Connection ~ 3950 4350
+Wire Wire Line
+	4050 4050 3850 4050
+Wire Wire Line
+	3850 4050 3850 5250
+Wire Wire Line
+	3850 5250 4200 5250
+$Comp
+L power:+3.3V #PWR044
+U 1 1 5AE58D13
+P 4700 5200
+F 0 "#PWR044" H 4700 5050 50  0001 C CNN
+F 1 "+3.3V" H 4715 5373 50  0000 C CNN
+F 2 "" H 4700 5200 50  0001 C CNN
+F 3 "" H 4700 5200 50  0001 C CNN
+	1    4700 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 5200 4700 5250
+$Comp
+L device:C_Small C21
+U 1 1 5AE6F274
+P 4200 5350
+F 0 "C21" H 4292 5396 50  0000 L CNN
+F 1 "1uF" H 4292 5305 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_0603_CAP_NOSILK" H 4200 5350 50  0001 C CNN
+F 3 "" H 4200 5350 50  0001 C CNN
+	1    4200 5350
+	1    0    0    -1  
+$EndComp
+Connection ~ 4200 5250
+Wire Wire Line
+	4200 5250 4650 5250
+$Comp
+L device:C_Small C23
+U 1 1 5AE6F5EF
+P 4650 5350
+F 0 "C23" H 4742 5396 50  0000 L CNN
+F 1 "0.1uF" H 4742 5305 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 4650 5350 50  0001 C CNN
+F 3 "" H 4650 5350 50  0001 C CNN
+	1    4650 5350
+	1    0    0    -1  
+$EndComp
+Connection ~ 4650 5250
+Wire Wire Line
+	4650 5250 4700 5250
+Wire Wire Line
+	4200 5450 4650 5450
+Wire Wire Line
+	4650 5450 4700 5450
+Wire Wire Line
+	4700 5450 4700 5500
+Connection ~ 4650 5450
+$Comp
+L power:GND #PWR045
+U 1 1 5AE9E463
+P 4700 5500
+F 0 "#PWR045" H 4700 5250 50  0001 C CNN
+F 1 "GND" H 4705 5327 50  0000 C CNN
+F 2 "" H 4700 5500 50  0001 C CNN
+F 3 "" H 4700 5500 50  0001 C CNN
+	1    4700 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R46
+U 1 1 5AE9F0A4
+P 7050 4800
+F 0 "R46" H 7120 4846 50  0000 L CNN
+F 1 "10k" H 7120 4755 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 6980 4800 50  0001 C CNN
+F 3 "" H 7050 4800 50  0001 C CNN
+	1    7050 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R48
+U 1 1 5AE9F16C
+P 7600 4900
+F 0 "R48" H 7670 4946 50  0000 L CNN
+F 1 "0" H 7670 4855 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 7530 4900 50  0001 C CNN
+F 3 "" H 7600 4900 50  0001 C CNN
+	1    7600 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR054
+U 1 1 5AE9F801
+P 7600 5050
+F 0 "#PWR054" H 7600 4800 50  0001 C CNN
+F 1 "GND" H 7605 4877 50  0000 C CNN
+F 2 "" H 7600 5050 50  0001 C CNN
+F 3 "" H 7600 5050 50  0001 C CNN
+	1    7600 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 4750 7600 4650
+Wire Wire Line
+	7600 4650 7750 4650
+Wire Wire Line
+	7750 4650 7750 4350
+$Comp
+L power:+3.3V #PWR053
+U 1 1 5AEAC18D
+P 7050 4650
+F 0 "#PWR053" H 7050 4500 50  0001 C CNN
+F 1 "+3.3V" H 7065 4823 50  0000 C CNN
+F 2 "" H 7050 4650 50  0001 C CNN
+F 3 "" H 7050 4650 50  0001 C CNN
+	1    7050 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 4300 7800 4300
+Wire Wire Line
+	7800 4300 7800 4600
+Wire Wire Line
+	7800 4600 7450 4600
+Wire Wire Line
+	7450 4600 7450 4950
+Wire Wire Line
+	7450 4950 7050 4950
+Connection ~ 7050 4950
+Wire Wire Line
+	7050 4950 6400 4950
+Text Label 6450 4950 0    25   ~ 0
+DBG_nRST
+Text Label 8000 3250 0    25   ~ 0
+DBG_SWO
+Wire Wire Line
+	7750 3200 8200 3200
+Wire Wire Line
+	7750 3250 8200 3250
+Wire Wire Line
+	3700 3750 4050 3750
+Wire Wire Line
+	3700 3800 4050 3800
+Text Label 3750 3750 0    25   ~ 0
+DBG_SWDIO
+Text Label 3750 3800 0    25   ~ 0
+DBG_SWCLK
+$Comp
+L Connector:Conn_01x06 J6
+U 1 1 5AF136F9
+P 6400 6000
+F 0 "J6" H 6320 6417 50  0000 C CNN
+F 1 "Conn_01x06" H 6320 6326 50  0000 C CNN
+F 2 "azonenberg_pcb:CONN_HEADER_2.54MM_1x6" H 6400 6000 50  0001 C CNN
+F 3 "~" H 6400 6000 50  0001 C CNN
+	1    6400 6000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR050
+U 1 1 5AF1391F
+P 6700 5700
+F 0 "#PWR050" H 6700 5550 50  0001 C CNN
+F 1 "+3.3V" H 6715 5873 50  0000 C CNN
+F 2 "" H 6700 5700 50  0001 C CNN
+F 3 "" H 6700 5700 50  0001 C CNN
+	1    6700 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR051
+U 1 1 5AF2065E
+P 6700 6400
+F 0 "#PWR051" H 6700 6150 50  0001 C CNN
+F 1 "GND" H 6705 6227 50  0000 C CNN
+F 2 "" H 6700 6400 50  0001 C CNN
+F 3 "" H 6700 6400 50  0001 C CNN
+	1    6700 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 6000 6700 6000
+Wire Wire Line
+	6700 6000 6700 6400
+Wire Wire Line
+	6600 5800 6700 5800
+Wire Wire Line
+	6700 5800 6700 5700
+Wire Wire Line
+	6600 5900 7650 5900
+Wire Wire Line
+	6600 6100 7650 6100
+Wire Wire Line
+	6600 6200 7650 6200
+Wire Wire Line
+	6600 6300 7650 6300
+Text Label 7050 5900 0    25   ~ 0
+DBG_SWCLK
+Text Label 7050 6100 0    25   ~ 0
+DBG_SWDIO
+Text Label 7050 6200 0    25   ~ 0
+DBG_nRST
+Text Label 7050 6300 0    25   ~ 0
+DBG_SWO
+Wire Wire Line
+	3900 2000 4350 2000
+Wire Wire Line
+	3850 2150 4400 2150
+Wire Wire Line
+	3800 2300 4450 2300
+Wire Wire Line
+	3750 2450 4500 2450
+Text Notes 6250 1200 0    25   ~ 0
+This connector allows the user to use the debugger to debug other devices other than the hackme.\nIn order to do so, the user must desolder the five 0-ohm resistors.
+Text Notes 2150 3750 0    25   ~ 0
+FIXME: Check if 22 ohm resistors is necessary
+Wire Wire Line
+	3500 3600 3500 4500
+Wire Wire Line
+	3450 3550 3450 4350
+Text Notes 800  5000 0    25   ~ 0
+This connector allows the user to use the UART for other devices other than the hackme.\nIn order to do so, the user must desolder the two 0-ohm resistors.
+Text Notes 8850 4550 0    25   ~ 0
+FIXME: Check values of load caps
+Text Notes 6900 6500 0    25   ~ 0
+This connector is for debugging the debugger.\nNonstandard pinout matching STM32F4 Discovery.
+Text Notes 8450 2400 0    25   ~ 0
+This lies to stock BMP firmware that the target voltage is present
+$Comp
+L device:R R47
+U 1 1 5B065186
+P 7350 2650
+F 0 "R47" H 7420 2696 50  0000 L CNN
+F 1 "DNP" H 7420 2605 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 7280 2650 50  0001 C CNN
+F 3 "" H 7350 2650 50  0001 C CNN
+	1    7350 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R50
+U 1 1 5B06525E
+P 7950 2650
+F 0 "R50" H 8020 2696 50  0000 L CNN
+F 1 "DNP" H 8020 2605 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 7880 2650 50  0001 C CNN
+F 3 "" H 7950 2650 50  0001 C CNN
+	1    7950 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 2400 7650 2450
+Wire Wire Line
+	7650 2450 7350 2450
+Wire Wire Line
+	7350 2450 7350 2500
+Connection ~ 7650 2450
+Wire Wire Line
+	7650 2450 7650 2500
+Wire Wire Line
+	7650 2450 7950 2450
+Wire Wire Line
+	7950 2450 7950 2500
+Wire Wire Line
+	7350 2800 7350 2950
+Wire Wire Line
+	7350 2950 7850 2950
+Wire Wire Line
+	7850 2950 7850 3350
+Wire Wire Line
+	7850 3350 7750 3350
+Wire Wire Line
+	7750 3450 7950 3450
+Wire Wire Line
+	8250 2400 8350 2400
+Wire Wire Line
+	7950 2800 7950 3450
+Text Notes 7100 2150 0    25   ~ 0
+These lie to the stock firmware that we’re a BMP Mini V2
+Text Notes 3650 7950 0    25   ~ 0
+This circuitry lets us MITM the victim. We hijack the UART on the LED pins because there aren’t any more pins available.
+Text Notes 9350 6600 0    25   ~ 0
+This design is similar in spirit to a BMP Mini V1.\nWe lie to the firmware and tell it that we are a\nBMP Mini V2 because the V1 supposedly uses\na STM32F102 rather than an STM32F103.\n
+Wire Wire Line
+	3700 2600 3700 3200
+NoConn ~ 4050 3100
+NoConn ~ 4050 3150
+NoConn ~ 4050 3450
+NoConn ~ 4050 3850
+NoConn ~ 7750 4050
+NoConn ~ 7750 4000
+NoConn ~ 7750 3950
+NoConn ~ 7750 3550
+NoConn ~ 7750 3500
+NoConn ~ 7750 3150
+NoConn ~ 1950 3750
+$Comp
+L Logic_74xx:74LVC125 U6
+U 1 1 5BC5F810
+P 5000 7050
+F 0 "U6" H 4950 7050 50  0000 C CNN
+F 1 "74LVC125" H 5100 7250 50  0000 C CNN
+F 2 "azonenberg_pcb:SOIC_14_3.9MM" H 5000 7050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LVC125" H 5000 7050 50  0001 C CNN
+	1    5000 7050
+	1    0    0    1   
+$EndComp
+$Comp
+L Logic_74xx:74LVC125 U6
+U 2 1 5BC5F8F3
+P 5000 7550
+F 0 "U6" H 4950 7550 50  0000 C CNN
+F 1 "74LVC125" H 5100 7750 50  0000 C CNN
+F 2 "azonenberg_pcb:SOIC_14_3.9MM" H 5000 7550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LVC125" H 5000 7550 50  0001 C CNN
+	2    5000 7550
+	1    0    0    1   
+$EndComp
+$Comp
+L Logic_74xx:74LVC125 U6
+U 3 1 5BC5FA4C
+P 2250 7450
+F 0 "U6" H 2200 7450 50  0000 C CNN
+F 1 "74LVC125" H 2350 7650 50  0000 C CNN
+F 2 "azonenberg_pcb:SOIC_14_3.9MM" H 2250 7450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LVC125" H 2250 7450 50  0001 C CNN
+	3    2250 7450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Logic_74xx:74LVC125 U6
+U 4 1 5BC5FB34
+P 5000 6100
+F 0 "U6" H 4950 6100 50  0000 C CNN
+F 1 "74LVC125" H 5000 6350 50  0000 C CNN
+F 2 "azonenberg_pcb:SOIC_14_3.9MM" H 5000 6100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LVC125" H 5000 6100 50  0001 C CNN
+	4    5000 6100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Logic_74xx:74LVC125 U6
+U 5 1 5BC5FC1F
+P 3000 7250
+F 0 "U6" H 2900 7250 50  0000 L CNN
+F 1 "74LVC125" H 3050 6850 50  0000 L CNN
+F 2 "azonenberg_pcb:SOIC_14_3.9MM" H 3000 7250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LVC125" H 3000 7250 50  0001 C CNN
+	5    3000 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 7050 4700 7050
+Wire Wire Line
+	4400 7550 4700 7550
+Wire Wire Line
+	5300 7550 5450 7550
+Wire Wire Line
+	5300 7050 5450 7050
+Wire Wire Line
+	4050 7300 4300 7300
+Wire Wire Line
+	5000 5850 4300 5850
+$Comp
+L power:+3.3V #PWR072
+U 1 1 5BE17FA0
+P 3000 6750
+F 0 "#PWR072" H 3000 6600 50  0001 C CNN
+F 1 "+3.3V" H 3015 6923 50  0000 C CNN
+F 2 "" H 3000 6750 50  0001 C CNN
+F 3 "" H 3000 6750 50  0001 C CNN
+	1    3000 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR073
+U 1 1 5BE1816D
+P 3000 7750
+F 0 "#PWR073" H 3000 7500 50  0001 C CNN
+F 1 "GND" H 3005 7577 50  0000 C CNN
+F 2 "" H 3000 7750 50  0001 C CNN
+F 3 "" H 3000 7750 50  0001 C CNN
+	1    3000 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R57
+U 1 1 5BE47CA5
+P 2550 7600
+F 0 "R57" H 2620 7646 50  0000 L CNN
+F 1 "0" H 2620 7555 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 2480 7600 50  0001 C CNN
+F 3 "" H 2550 7600 50  0001 C CNN
+	1    2550 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R56
+U 1 1 5BE47D92
+P 2250 7050
+F 0 "R56" H 2320 7096 50  0000 L CNN
+F 1 "0" H 2320 7005 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 2180 7050 50  0001 C CNN
+F 3 "" H 2250 7050 50  0001 C CNN
+	1    2250 7050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1950 7450
+$Comp
+L power:GND #PWR071
+U 1 1 5BE57B9E
+P 2550 7750
+F 0 "#PWR071" H 2550 7500 50  0001 C CNN
+F 1 "GND" H 2555 7577 50  0000 C CNN
+F 2 "" H 2550 7750 50  0001 C CNN
+F 3 "" H 2550 7750 50  0001 C CNN
+	1    2550 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR070
+U 1 1 5BE679F9
+P 2250 6900
+F 0 "#PWR070" H 2250 6750 50  0001 C CNN
+F 1 "+3.3V" H 2265 7073 50  0000 C CNN
+F 2 "" H 2250 6900 50  0001 C CNN
+F 3 "" H 2250 6900 50  0001 C CNN
+	1    2250 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 2600 4550 2600
+$Comp
+L device:C C30
+U 1 1 5C222157
+P 3300 7100
+F 0 "C30" H 3415 7146 50  0000 L CNN
+F 1 "0.1uF" H 3415 7055 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 3338 6950 50  0001 C CNN
+F 3 "" H 3300 7100 50  0001 C CNN
+	1    3300 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 6950 3300 6750
+Wire Wire Line
+	3300 6750 3000 6750
+Connection ~ 3000 6750
+Wire Wire Line
+	3300 7250 3300 7750
+Wire Wire Line
+	3300 7750 3000 7750
+Connection ~ 3000 7750
+Wire Wire Line
+	3750 6800 5000 6800
+Connection ~ 4300 7300
+Wire Wire Line
+	4300 7300 5000 7300
+Wire Wire Line
+	4300 5850 4300 7300
+$Comp
+L device:R R36
+U 1 1 5B3F50BD
+P 3750 7550
+F 0 "R36" H 3820 7596 50  0000 L CNN
+F 1 "10k" H 3820 7505 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 3680 7550 50  0001 C CNN
+F 3 "" H 3750 7550 50  0001 C CNN
+	1    3750 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R61
+U 1 1 5B3F51AC
+P 4050 7550
+F 0 "R61" H 4120 7596 50  0000 L CNN
+F 1 "DNP" H 4120 7505 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 3980 7550 50  0001 C CNN
+F 3 "" H 4050 7550 50  0001 C CNN
+	1    4050 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 5B3F5294
+P 3750 7700
+F 0 "#PWR0111" H 3750 7450 50  0001 C CNN
+F 1 "GND" H 3755 7527 50  0000 C CNN
+F 2 "" H 3750 7700 50  0001 C CNN
+F 3 "" H 3750 7700 50  0001 C CNN
+	1    3750 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 5B3F536E
+P 4050 7700
+F 0 "#PWR0112" H 4050 7450 50  0001 C CNN
+F 1 "GND" H 4055 7527 50  0000 C CNN
+F 2 "" H 4050 7700 50  0001 C CNN
+F 3 "" H 4050 7700 50  0001 C CNN
+	1    4050 7700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 7400 3750 6800
+Wire Wire Line
+	4050 7400 4050 7300
+$EndSCHEMATC

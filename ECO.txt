@@ -1,0 +1,6 @@
+Rev B ECO 1:
+Swapped silkscreen labels for R51 and R52. The previous labels were incorrect and would
+lead to a voltage below nominal Vih for the pin.
+
+Rev B ECO 2:
+Removed "at Oath" from Paranoids logo.
