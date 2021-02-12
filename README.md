@@ -1,3 +1,6 @@
+# ARCHIVED 
+
+
 # Paranoids Hardware Hackme 1 -- EDA Files
 > PCB design files for hackme designed by the Paranoids security team.
 
